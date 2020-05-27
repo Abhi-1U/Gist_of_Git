@@ -1,0 +1,23 @@
+site_name: Gist of Git
+theme:
+  features:
+    - instant
+    - tabs
+  name: material
+  palette:
+    primary: 'white'
+    accent: 'orange'
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: true
+      use_pygments: true 
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+nav: 
+  - Home : index.md
+
