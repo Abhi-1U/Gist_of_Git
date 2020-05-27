@@ -229,6 +229,6 @@ Its always a best practice to maintain a continuum with reading and learning abo
 [Git for computer scientists](https://eagain.net/articles/git-for-computer-scientists/)  
 7.For those who want Linux environment in their PCs.  
 Better than Linux VM worse than Clean install of Linux.  
-[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about)  
-8. For Learning more tools like git  
-[The Missing semester](https://missing.csail.mit.edu/)
+[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about)    
+8.For Learning more tools like git    
+[The Missing semester](https://missing.csail.mit.edu/)  
