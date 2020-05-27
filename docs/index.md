@@ -32,6 +32,32 @@ Git at its heart is written in C language which should not be understated , Git 
 Git commits are objects that contain all the meta data and the changes in the directory, linked with the user and his/her previous commit. Commits are immutable objects which means once a commit object is created it can not be edited , however you can delete or create a new commit by using the commit as a base. No two Commits are same. Each commit is again referred by a hash value linked with it. The immutable nature of the commit objects make them robust and secure , which makes a lot of sense considering you cant change what happened in past. The SHA1 hash value maintains the integrity of data in the commit and prevents malicious changes. Any change in the commit data will change the Hash value and Git will recognize the change in hash value .
 The General Chain of Commits can be visualized or represented by a chain of commits forming a DAG([Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)) which cannot link back to any of its previous nodes and always goes forward in nature. 	  
 ![](imagez/DAG2.png)
+### A small intro to SHA1 Hash
+ SHA1 (Secure Hash Algorithm 1) is a commonly used hash algorithm which generates 160bit hash value typically rendered in 40 digits long hexadecimal format.  
+ While the main topic of this article is not SHA1 we can still have some interactive hands on code to better understand this hash function and how it helps git.  
+#### python Code  
+ 
+```python
+import hashlib
+import sys
+def sha1(argv):
+    with open(argv, 'rb') as f:
+        contents = f.read()
+    m = hashlib.sha1()
+    m.update(contents)
+    print("SHA1 Value of file:",m.hexdigest())
+if __name__ == "__main__":
+    arg=sys.argv[1]
+    sha1(arg)
+
+```
+
+#### Output:  
+
+```bash  
+$ python3 ./sha1.py sha1.py
+SHA1 Value of file: 664050f9ac17a676c2a4d8f6dc63058093d959ea  
+```
 
 ## Various Ways of Using Git
 
@@ -194,7 +220,7 @@ Its always a best practice to maintain a continuum with reading and learning abo
 2.Another Good Resource for learning  
 [Learning Git branch](https://learngitbranching.js.org/)  
 3.Guidance on Writing Good commit messages  
-[Writing Good Git commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html  
+[Writing Good Git commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)  
 4.For the Curious minds  
 [Git from Bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)  
 5.If you mess up with git  
