@@ -5,7 +5,9 @@ Over the years Git has transformed into the De-facto standard of version control
 
 ## Git and GitHub
 To be clear GitHub is a collaboration platform by Github Inc. © . GitHub also offers various services includes Hosting of Project repositories(both private and public) ,websites and web-pages (git-hub pages) usually for documentation of open source projects and team collaboration tools.
-  Git on the other hand is a local VCS which works independently and can work off line unless you want to connect it to remote repositories. Git manages your Project repository and manages them locally in your machine. If you want to have a backup copy of your project repositories you can connect it to various sites which offer repository hosting capabilities such as GitHub and bitBucket.
+  Git on the other hand is a local VCS which works independently and can work off line unless you want to connect it to remote repositories. Git manages your Project repository and manages them locally in your machine. If you want to have a copy of your project repositories to be made available public you can connect it to various sites which offer repository hosting capabilities such as GitHub and bitBucket.  
+###### Note:  
+     GitHub is not a backup tool! 
 
 ## Why use Git ?
  One of the most common problems i ran into frequently during my early Software development journey was managing different versions of code . Usually i used to create multiple folders with copies of code  plagued with complicated format and poorly named directories like 'last-version' ,'final-version','Ultimate-Version','post-Ultimate-Edition' and so on .. which made finding the appropriate code  very confusing and messed up.  
@@ -94,6 +96,31 @@ This can be done by bringing genuine issues or bugs to the notice of developers 
 This way of contribution is to offer some changes in the source code of the developers repository and to merge them with the original code base hosted in the developers repository. These types of contributions are often popular in open source developments but be wary of Licenses, the terms of use and the guidelines given by developer for contribution . A pull request is raised when you have some improved , bug fixing or modified code to offer which is then approved/rejected by the developer and merged in accordance to his/her wishes.  
 ![](imagez/github2.png)
 
+### GitHub Pages
+ One of the perks of using Github is it lets you host webpages; sort of.
+ Obviously it does not offer a complete dedicated webserver.  
+ One user/organization site per GitHub Account is provided, however you get unlimited repository websites (In layman terms, one website per project repository ,limited by the number of project repositories you make you make).  
+ Obviously there are restrictions for free accounts :
+ 
+* GitHub Pages source repositories have a recommended limit of 1GB. For more information, see ["What is my disk quota?"](https://help.github.com/en/articles/what-is-my-disk-quota/#file-and-repository-size-limitations).  
+
+* Published GitHub Pages sites may be no larger than 1 GB.
+
+* GitHub Pages sites have a soft bandwidth limit of 100GB per month.
+
+* GitHub Pages sites have a soft limit of 10 builds per hour.
+  
+However there are many more terms and conditions that you need to adhere to which primarily discourages **"Use of GitHub pages for Commercial and Illegal Purposes"**.
+[Here](https://help.github.com/en/github/working-with-github-pages/about-github-pages) is a quick link to the official documentation for in-depth information and clarity.
+
+There are two ways to deploy or generate a website on GitHub:
+##### 1. Traditional HTML 
+ you can create a docs sub folder in your repository and create a traditional html website as you would do normally. You can use other features like CSS and Javascript as well but GitHub pages does not support any kind of Backend :( .  
+##### 2. Jekyll with Markdown Files
+Markdown is a lightweight Markup language which can be used to generate documents of various formats . Its Used commonly by developers for writing README files and Documentation files as well . The current page you are reading is written in markdown as well hence if you are interested in its inner workings of syntax it might be a good idea to look under the hood of the source code and obviously Markdown in its own right deserves a dedicated Article hence i wont be elaborating it.
+
+I leave the choice upon the reader to use whichever way they feel comfortable with.   
+![](imagez/github3.png)
 ### Advanced Topics
 Well as this article was for beginners, some topics like GPG encryption key signing your work , were not feasible and are left as a Exploration task for the reader.  
 [Signing your git Commits and Tags](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work). 
@@ -189,10 +216,10 @@ git push <name/identifier> <branch>:<branch>
 # pull
 git pull <name/identifier> <branch>:<branch>
 
-# clone
+# clone a repository into your local machine
 git clone
 
-#fetch
+#fetch the changes from the remote repository
 git fetch
 
 #Advanced Topics Read The Documentation Before using them
@@ -232,3 +259,6 @@ Better than Linux VM worse than Clean install of Linux.
 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about)    
 8.For Learning more tools like git    
 [The Missing semester](https://missing.csail.mit.edu/)  
+9.MarkDown Guide for Beginners  
+[MarkDownGuide](https://www.markdownguide.org/getting-started/)
+
