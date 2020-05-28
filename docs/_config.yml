@@ -3,6 +3,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman
 include:
   - index.md
