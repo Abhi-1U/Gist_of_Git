@@ -262,3 +262,4 @@ Better than Linux VM worse than Clean install of Linux.
 9.MarkDown Guide for Beginners  
 [MarkDownGuide](https://www.markdownguide.org/getting-started/)
 
+Licensed Under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0).
