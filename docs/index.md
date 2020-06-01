@@ -1,6 +1,6 @@
 # Gist Of Git 
 
-Git is a distributed Version Control System used to manage a code repository with various collaborators and tracking changes overtime. Git was developed by Linus Tolvards for better Source code management and later became a common staple among developers.
+Git is a distributed Version Control System used to manage a code repository with various collaborators and tracking changes overtime. Git was developed by Linus Torvalds for better Source code management and later became a common staple among developers.
 Over the years Git has transformed into the De-facto standard of version control systems. Git is one of the tools which might feel ugly to use with all those commands at stake but the underlying concept is very beautiful.
 
 ## Git and GitHub
