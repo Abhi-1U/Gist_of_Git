@@ -6,7 +6,7 @@ def sha1(argv):
     m = hashlib.sha1()
     m.update(contents)
     print("SHA1 Value of file:",m.hexdigest())
-
+    print("Operation complete")
 if __name__ == "__main__":
     arg=sys.argv[1]
     sha1(arg)
